@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .container {
@@ -18,7 +19,6 @@ body {
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
 }
 
 header {
@@ -75,6 +75,7 @@ footer {
     border-top: 1px solid #ddd;
 }
 
+/* Scroll-to-Top Button Styles */
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
