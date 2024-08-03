@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaeaea;
     color: #333;
     margin: 0;
     padding: 0;
@@ -12,45 +12,57 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     width: 90%;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     margin: 20px;
     overflow-y: auto;
     max-height: 80vh;
 }
 
-h1 {
-    color: #007bff;
+header {
     border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #007bff;
+    font-size: 2em;
+    margin: 0;
+}
+
+section {
     margin-bottom: 20px;
 }
 
-h2 {
-    color: #555;
-    margin-top: 20px;
+section h2 {
+    color: #444;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-p {
-    line-height: 1.6;
-    margin-bottom: 15px;
+section p {
+    line-height: 1.8;
+    margin: 0;
 }
 
 a {
     color: #007bff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
+    color: #0056b3;
     text-decoration: underline;
 }
 
-.footer {
-    margin-top: 20px;
+footer {
+    margin-top: 30px;
     text-align: center;
     font-size: 0.9em;
     color: #555;
@@ -61,21 +73,22 @@ a:hover {
     bottom: 20px;
     right: 20px;
     background-color: #007bff;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .scroll-to-top.show {
     opacity: 1;
+    transform: scale(1.1);
 }
