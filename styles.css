@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #000000;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -16,9 +16,9 @@ body {
     max-width: 900px;
     padding: 30px;
     margin: 20px;
-    background: #ffffff;
+    background: #1a1a1a;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
 header {
@@ -26,11 +26,11 @@ header {
 }
 
 header h1 {
-    color: #007bff;
+    color: #ffffff;
     font-size: 2em;
     margin: 0;
     text-align: center;
-    border-bottom: 3px solid #007bff;
+    border-bottom: 3px solid #ffffff;
     padding-bottom: 10px;
 }
 
@@ -43,10 +43,10 @@ section {
 }
 
 section h2 {
-    color: #444;
+    color: #ffffff;
     font-size: 1.5em;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555;
     padding-bottom: 5px;
 }
 
@@ -57,22 +57,22 @@ section p {
 }
 
 a {
-    color: #007bff;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #cccccc;
     text-decoration: underline;
 }
 
 footer {
     text-align: center;
     font-size: 0.9em;
-    color: #555;
+    color: #aaaaaa;
     padding-top: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #555;
 }
 
 /* Scroll-to-Top Button Styles */
@@ -80,8 +80,8 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -91,7 +91,7 @@ footer {
     align-items: center;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -99,4 +99,21 @@ footer {
 .scroll-to-top.show {
     opacity: 1;
     transform: scale(1.1);
+}
+
+/* Collapsible Section Styles */
+.collapsible {
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background-color: #333333;
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
